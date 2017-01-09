@@ -1,11 +1,5 @@
 package com.feiyu.strategy_pattern;
-
-import java.util.Scanner;
-
 import com.feiyu.strategy_pattern.Context.type;
-import com.feiyu.strategy_pattern.algorithm.ConcreteStrategyA;
-import com.feiyu.strategy_pattern.algorithm.ConcreteStrategyB;
-import com.feiyu.strategy_pattern.algorithm.ConcreteStrategyC;
 /**
  * 策略模式是定义了一系列算法的方法，从概念上来看，所有这些算法完成的都是相同的工作，只是实现不同，它可以以相同的方式调用所有
  * 的算法，减少了各种算法类于使用类之间的耦合。
