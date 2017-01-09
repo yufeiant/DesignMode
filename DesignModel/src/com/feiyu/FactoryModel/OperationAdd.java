@@ -1,6 +1,6 @@
 package com.feiyu.FactoryModel;
 /**
- * 加法运算类，只是简单的加法运算
+ * 鍔犳硶杩愮畻绫伙紝鍙槸绠�鍗曠殑鍔犳硶杩愮畻
  * @author feiyu
  *
  */

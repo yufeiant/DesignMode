@@ -1,6 +1,6 @@
 package com.feiyu.FactoryModel;
 /**
- * ³ı·¨
+ * é™¤æ³•è¿ç®—ç±»
  * @author feiyu
  *
  */
@@ -15,7 +15,7 @@ public class OperationDiv extends Operation {
 	public double GetResult() throws Exception {
 		double result = 0;
 		if(number.getNumberB()==0){
-			throw new Exception("³ıÊı²»ÄÜÎª0");
+			throw new Exception("è¢«é™¤æ•°ä¸èƒ½ä¸ºç©ºï¼");
 		}
 		result = number.getNumberA()/number.getNumberB();
 		return result;

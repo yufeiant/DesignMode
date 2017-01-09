@@ -1,6 +1,6 @@
 package com.feiyu.FactoryModel;
 /**
- * ¼ÆËã¹¤³§Àà
+ * è®¡ç®—å·¥å‚ç±»
  * @author feiyu
  *
  */
@@ -22,7 +22,7 @@ public class OperationFactory {
 			break;
 		
 		default:
-				throw new Exception("»¹Ã»ÓĞÊµÏÖÕâ¸öÔËËã·¨£¡±§Ç¸£¡£¡£¡");
+				throw new Exception("è¿˜æ²¡æœ‰å®ç°è¿™ä¸ªè¿ç®—æ³•ï¼æŠ±æ­‰ï¼ï¼ï¼");
 		}
 		return operation;
 		

@@ -1,7 +1,7 @@
 package com.feiyu.FactoryModel;
 /**
- * ¼ÆËãÀàµÄ³éÏóÀà£¬ÔÚÕâÀï°ÑÊı¾İÀà½øĞĞÁË·Ö×°£¬ÔÚºóÃæµÄ×ÓÀàÖĞ²»ĞèÒªÔÚ½øĞĞÊı¾İÀàµÄ³õÊ¼»¯£¬
- * Ö»ĞèÒª´«ÈëÖµ¾Í¿ÉÒÔÁË
+ * è®¡ç®—ç±»çš„æŠ½è±¡ç±»ï¼Œåœ¨è¿™é‡ŒæŠŠæ•°æ®ç±»è¿›è¡Œäº†åˆ†è£…ï¼Œåœ¨åé¢çš„å­ç±»ä¸­ä¸éœ€è¦åœ¨è¿›è¡Œæ•°æ®ç±»çš„åˆå§‹åŒ–ï¼Œ
+ * åªéœ€è¦ä¼ å…¥å€¼å°±å¯ä»¥äº†
  * @author feiyu
  *
  */
@@ -26,7 +26,7 @@ public abstract class Operation {
 	public void setNumberB(double numberB) {
 		number.setNumberB(numberB);
 	}
-	//»ñÈ¡¼ÆËã½á¹û	
+	//è·å–è®¡ç®—ç»“æœ	
 	abstract double GetResult() throws Exception;
 	
 	
