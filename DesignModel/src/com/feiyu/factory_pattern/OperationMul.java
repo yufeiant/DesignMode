@@ -1,4 +1,4 @@
-package com.feiyu.FactoryModel;
+package com.feiyu.factory_pattern;
 /**
  * 乘法运算类
  * @author feiyu

@@ -1,4 +1,4 @@
-package com.feiyu.FactoryModel;
+package com.feiyu.factory_pattern;
 /**
  * 加法运算类，只是简单的加法运算
  * @author feiyu

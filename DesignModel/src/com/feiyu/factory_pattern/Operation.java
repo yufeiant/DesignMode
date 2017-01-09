@@ -1,4 +1,4 @@
-package com.feiyu.FactoryModel;
+package com.feiyu.factory_pattern;
 /**
  * 计算类的抽象类，在这里把数据类进行了分装，在后面的子类中不需要在进行数据类的初始化，
  * 只需要传入值就可以了
