@@ -7,16 +7,16 @@ import com.feiyu.decorative_pattern.decorative.ConcreteDecoratorsB;
  * 装饰模式，动态地给一个对象添加一些额外的职责，就增加功能来说，装饰模式比生成子类更为灵活。
  * 
  * 装饰模式就是利用SetComponent来对对象进行封装的，这样每个装饰对象的实现和如何使用这个
- * 对象就分离开了，每个装饰对象值关心自己的功能，不需要关心如何添加到对象链当中[DPE]
+ * 对象就分离开了，每个装饰对象只关心自己的功能，不需要关心如何添加到对象链当中[DPE]
  * 
  * 流程描述：
  * 装饰模式是为已有功能的对象动态的添加另外的功能，核心是装饰对象和操作对象它们有共同的接口
  * 在这个项目里，ConcreteComonent和ConcreteDecoratorsA都实现了接口Component,ConcreteDecoratorsA
  * 对象通过继承Decorator来实现的Component接口，而在抽象类Decorator中持有了Component它的饮用，然后调用
- * Component中的Operation方法，我们在操作装饰对象对原有对象动态添加额外功能时，操作的对象时最开始是
- * 从操作对象本身开始的，先调用它自己的operation,然后调用装饰对象的A的operation方法，接着
- * 调用B的operation方法。
- * 
+ * Component中的Operation方法，我们在操作装饰对象对原有对象动态添加额外功能时，是通过SetComponent来对
+ * 操作对象进行封装，d1.SetComponent（con）,当我们调用d1.Operation();时，Operation方法是继承至Decorator,
+ * super.Operation();调用Decorator中的方法，而Decorator中的component已经通过SetComponent设置了进去，
+ * 所以，先执行的是ConcreteComonent的方法，接着走ConcreteDecoratorsA补充的方法。
  * 
  * 官方描述：
  * 装饰模式是为已有功能动态添加更多功能的一种方式。
