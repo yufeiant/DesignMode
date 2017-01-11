@@ -27,7 +27,7 @@ public abstract class Operation {
 		number.setNumberB(numberB);
 	}
 	//获取计算结果	
-	abstract double GetResult() throws Exception;
+	public abstract double GetResult() throws Exception;
 	
 	
 }
