@@ -34,7 +34,7 @@ public class Main {
 
 	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		//version_4 版本中的代码
-		User user = new User("",21);
+		User user = new User();
 		Department department = new Department();
 		DataAccess data_util = new DataAccess();
 		IUser iu =  data_util.CreateUser();

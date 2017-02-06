@@ -13,7 +13,7 @@ import com.feiyu.abstract_factory_pattern.javabean.User;
 public class Main {
 
 	public static void main(String[] args) {
-		User user = new User("帅帅",24);
+		User user = new User();
 		IFactory factory = new SqlServerFactory();
 		IUser iu = factory.CreateUser();
 		iu.Insert(user);

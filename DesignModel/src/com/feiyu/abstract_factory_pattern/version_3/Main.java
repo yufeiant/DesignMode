@@ -16,7 +16,7 @@ import com.feiyu.abstract_factory_pattern.javabean.User;
 public class Main {
 
 	public static void main(String[] args) {
-		User user = new User("",21);
+		User user = new User();
 		Department department = new Department();
 		IUser iu = DataAccess.CreateUser();
 		iu.Insert(user);

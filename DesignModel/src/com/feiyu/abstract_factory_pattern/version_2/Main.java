@@ -19,7 +19,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		User user = new User("帅帅",24);
+		User user = new User();
 		Department department = new Department();
 //		IFactory factory = new SqlServerFactory();
 		IFactory factory = new AccessFactory();
