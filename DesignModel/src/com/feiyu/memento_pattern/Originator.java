@@ -1,4 +1,4 @@
-package com.feiyu.memento;
+package com.feiyu.memento_pattern;
 /**
  * 发起人 -负责创建一个备忘录Memento，用以记录当前时刻的内部状态，并可以使用备忘录恢复内部
  * 状态，Originator可根据需要决定Memento存储Originator的哪些内部状态。

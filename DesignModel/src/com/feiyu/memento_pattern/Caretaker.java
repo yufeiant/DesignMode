@@ -1,4 +1,4 @@
-package com.feiyu.memento;
+package com.feiyu.memento_pattern;
 /**
  * 管理者，管理备忘录
  * @author feiyu

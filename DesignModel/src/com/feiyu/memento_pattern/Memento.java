@@ -1,4 +1,4 @@
-package com.feiyu.memento;
+package com.feiyu.memento_pattern;
 /**
  * 备忘录-负责存储Originator对象的内部状态
  * @author feiyu
