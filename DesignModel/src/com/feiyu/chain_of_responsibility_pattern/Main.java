@@ -10,15 +10,35 @@ package com.feiyu.chain_of_responsibility_pattern;
  * 状态模式主要解决的是当控制一个对象状态转换的条件表达式过去复杂时的情况，把状态的判断逻辑转移到表示不同状态的一系列类当中，
  * 可以把复杂的判断逻辑简化。
  * 
+ * 那下面我们就已经实现了责任链模式的代码：这里关键的一点是，当客户提交一个请求时，
+ * 请求沿链传递直至一个ConcreteHandler对象负责处理它。
+ * 好处是，请求者不用管哪个对象来处理，反正是会被处理的。
  * 
+ * 这就使得接收者和发送者都没有对方的明确信息，并且链中的对象自己也并不知道链的结构，
+ * 结果是职责链可简化对象的相互连接，它们仅需保持一个指向其后继者的饮用，而不需要保持它
+ * 所有的候选继任者的饮用。
+ * 
+ * 我们可以随时地增加或修改一个请求的结构，增强了对象指派职责的灵活性。
  * @author feiyu
  *
  */
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		//设置管理者
+		Handler h1 = new ConcreteHandler("经理");
+		Handler h2 = new ConcreteHandler2("总监");
+		Handler h3 = new ConcreteHandler3("总经理");
+		//设置继任者
+		h1.setSuccessor(h2);
+		h2.setSuccessor(h3);
+		
+		int [] reueqsts = {2,5,10,20,21,5};
+		
+		for (int i : reueqsts) {
+			h1.HandlerRequest(i);
+		}
+		
 	}
 
 }
